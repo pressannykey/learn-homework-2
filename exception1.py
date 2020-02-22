@@ -10,11 +10,18 @@
     
 """
 
+
 def ask_user():
     """
     Замените pass на ваш код
     """
-    pass
-    
+    while True:
+        try:
+            input("Cпроси что-нибудь: ")
+        except KeyboardInterrupt:
+            print('Пока!')
+            break
+
+
 if __name__ == "__main__":
     ask_user()
